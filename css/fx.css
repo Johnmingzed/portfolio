@@ -1,0 +1,105 @@
+/* =============== Navbar =============== */
+.navbar li {
+    overflow: hidden;
+}
+
+.navbar li h2 {
+    animation: slidin var(--hover-speed) forwards;
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.navbar li:nth-child(5) h2 {
+    animation-delay: calc(var(--hover-speed)*1*.5);
+}
+
+.navbar li:nth-child(4) h2 {
+    animation-delay: calc(var(--hover-speed)*2*.5);
+}
+
+.navbar li:nth-child(3) h2 {
+    animation-delay: calc(var(--hover-speed)*3*.5);
+}
+
+.navbar li:nth-child(2) h2 {
+    animation-delay: calc(var(--hover-speed)*4*.5);
+}
+
+.navbar li:nth-child(1) h2 {
+    animation-delay: calc(var(--hover-speed)*5*.5);
+}
+
+
+@keyframes slidin {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+/* =============== Relief =============== */
+
+.relief {
+    transform: perspective(125rem) rotate3d(0, 0, 0, 10deg);
+    transform-style: preserve-3d;
+    transition: calc(var(--hover-speed)*3);
+    z-index: 1;
+    position: relative;
+}
+
+.relief::before {
+    z-index: -1;
+    inset: 0;
+    content: "";
+    background-color: var(--shadow);
+    border-radius: inherit;
+    position: absolute;
+    filter: blur(.5rem);
+    transform: translateZ(-.1rem);
+    transition: inherit;
+}
+
+.relief p,
+.relief h2,
+.relief ul,
+.relief .preview,
+.relief h3,
+.relief .synopsis {
+    transition: inherit;
+    transform: translatez(0rem);
+}
+
+.relief h2,
+.relief h3 {
+    border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.relief:hover {
+    transform: perspective(125rem) rotate3d(0, 10, -2, 10deg);
+}
+
+.relief:hover p,
+.relief:hover h2,
+.relief:hover ul,
+.relief:hover .preview,
+.relief:hover h3,
+.relief:hover .synopsis {
+    transform: inherit;
+    transition: inherit;
+    transform: translatez(2rem);
+    text-shadow: -.5rem .25rem .15rem var(--shadow);
+}
+
+.relief:hover::before {
+    transform: translateZ(-4rem);
+    filter: blur(.15rem);
+}
+
+.relief:hover .preview {
+    transform: translatez(4rem);
+}

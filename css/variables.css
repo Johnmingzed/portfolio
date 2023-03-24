@@ -1,0 +1,50 @@
+:root {
+    --light-color: #9AC7C8;
+    --white: #fff;
+    --dark-color: #012e40;
+    --debug: #f00;
+    --bg-color1: #02525A;
+    --bg-color2: #027373;
+    --bg-color3: #73AD8E;
+    --bg-white: rgba(255,255,255,.6);
+    --bg-trans: rgba(255,255,255,.2);
+    --decoration-color: #D9A05B;
+    --shadow: rgba(1,43,64,.3);
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-display: 'Big Noodle', 'Big Shoulders Display', cursive;
+    --font-title: 'Big Shoulders Display', cursive;
+    --font-base: 'Ubuntu', sans-serif;
+    --font-condensed: 'Ubuntu Condensed', sans-serif;
+    --intro-speed: 1s;
+    --intro-delay: .25s;
+    --hover-speed: .25s;
+    --radius: .25rem;
+    font-size: 16px;
+    font-family: var(--font-base);
+    color: var(--white);
+}
+
+:focus-visible{
+    outline: 3px solid var(--decoration-color);
+    border-radius: 3px;
+}
+
+.clr-light, .clr-light:visited {
+    color: var(--light-color);
+}
+
+.clr-deco, .clr-deco:visited {
+    color: var(--decoration-color);
+}
+
+.clr-dark, .clr-dark:visited {
+    color: var(--dark-color);
+}
+
+.clr-title, .clr-title:visited {
+    color: var(--bg-color2);
+}
+
+.shadow{
+    box-shadow: 0 0 .5rem var(--shadow);
+}

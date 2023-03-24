@@ -1,0 +1,41 @@
+footer {
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, .2);
+    border-top: .1rem solid #fff;
+    margin: 0;
+    width: 100%;
+    display: grid;
+    padding: 1rem;
+    gap:1rem;
+}
+
+footer h2 {
+    justify-self: start;
+    display: none;
+}
+
+footer {
+    grid-template-columns: 2fr 1fr;
+}
+
+footer a {
+    justify-self: start;
+    padding:0;
+}
+
+ul.social {
+    color: var(--bg-color1);
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 1em;
+    margin: 0;
+    justify-self: end;
+    padding:0;
+}
+
+.social svg {
+    fill: var(--bg-color1);
+    height: 1em;
+    aspect-ratio: 1;
+}

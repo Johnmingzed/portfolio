@@ -1,0 +1,125 @@
+/* =============== card =============== */
+
+.card {
+    border-radius: var(--radius);
+    border: .075rem solid var(--white);
+    font-family: var(--font-mono);
+    font-size: clamp(1rem, .25vw + 1rem, 1.5rem);
+    line-height: 1.7em;
+    min-width: 25ch;
+}
+
+.card h2, .projet h3 {
+    text-align: center;
+    background-color: var(--bg-trans);
+    border-bottom: .075rem solid;
+}
+
+.card ul {
+    list-style: outside;
+    padding: 1rem 1rem 1rem 3.5rem;
+    margin: 0;
+}
+
+.card li::marker {
+    content: "« \0000A0";
+    color: var(--decoration-color);
+}
+
+/* =============== infos =============== */
+
+.infos {
+    padding: .75rem 1rem;
+    line-height: 1.7em;
+    font-style: italic;
+    background-color: var(--bg-white);
+    border-radius: var(--radius);
+}
+
+.infos p {
+    color: var(--bg-color2);
+    margin: 0;
+}
+
+.infos p:first-child {
+    margin-bottom: 1rem;
+}
+
+/* =============== tech =============== */
+
+.tech {
+    border-radius: var(--radius);
+    background-color: var(--bg-trans);
+}
+
+.tech ul {
+    list-style: none;
+    font-family: var(--font-display);
+    padding: 1rem;
+    font-size: clamp(1.25rem, .25vw + 1.25rem, 1.5rem);
+    line-height: 1.25em;
+    margin: 0;
+}
+
+.left {
+    text-align: start;
+}
+
+.right {
+    text-align: end;
+}
+
+/* =============== projet =============== */
+
+.projet {
+    border-radius: var(--radius);
+    border: .075rem solid var(--white);
+    min-width: 20ch;
+}
+.preview, .wip {
+    box-sizing: border-box;
+    height: 12rem;
+    flex-grow:1;
+    background-color: var(--decoration-color);
+    border-bottom: .075rem solid var(--white);
+    overflow: hidden;
+}
+
+.preview img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: var(--hover-speed);
+}
+
+.wip img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: saturate(0) contrast(1.5);
+    mix-blend-mode: overlay;
+    transition: var(--hover-speed);
+}
+
+/* .preview a img:hover, .preview a img:focus {
+    filter: saturate(1) contrast(1);
+    mix-blend-mode: normal;
+    transform: scale(1.2, 1.2);
+} */
+
+.preview:hover img, .preview:focus img {
+    filter: saturate(1) contrast(1);
+    mix-blend-mode: normal;
+    transform: scale(1.2, 1.2);
+    z-index: 2;
+}
+
+.synopsis{
+    padding: 1rem;
+    font-family: var(--font-mono);
+    font-size: clamp(1rem, .15vw + 1rem, 1.5rem);
+    line-height: 1.5em;
+    text-align: center;
+}
+
+/* =============== contact =============== */

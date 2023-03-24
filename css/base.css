@@ -1,0 +1,36 @@
+html{
+    scroll-behavior: smooth;
+}
+
+p {
+    font-family: var(--font-base);
+    color: var(--white);
+    font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
+    line-height: clamp(1.5em, .5vw + 1.5em , 1.7em);
+}
+
+h1 {
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 0;
+    font-size: clamp(2.1rem, 1vw + 2rem, 3.18rem);
+    flex-shrink: 0;
+}
+
+h2,
+h3,
+footer a {
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 0;
+    font-size: clamp(1rem, 2vw + 1rem, 2rem);
+    padding: .5rem .75rem;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: #fff;
+}

@@ -1,0 +1,71 @@
+.portrait {
+    box-sizing: border-box;
+    background-color: var(--decoration-color);
+    border: .075rem solid var(--white);
+    border-radius: var(--radius);
+}
+
+.portrait img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+/*     filter: saturate(0) contrast(1.5);
+    mix-blend-mode: overlay; */
+}
+
+.card-info {
+    font-style: italic;
+    font-weight: 300;
+}
+
+.card-info h2 {
+    padding: 0;
+    color: var(--dark-color);
+    font-style: normal;
+    text-align: end;
+}
+
+.card-info p{
+    margin-bottom: 0;
+}
+
+.qualifications {
+    background-color: var(--bg-white);
+    color: var(--dark-color);
+    border-radius: var(--radius);
+    font-family: var(--font-condensed);
+    font-size: clamp(1.2em, .5vw + 1em, 1.4em);
+    min-width: 20ch;
+}
+
+.qualifications h2 {
+    color: var(--bg-color2);
+    padding: 1rem;
+}
+
+table,
+tbody {
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    vertical-align: text-top;
+}
+
+th {
+    padding:0 1rem 0 1rem;
+    font-family: var(--font-display);
+    font-weight: normal;
+}
+
+td {
+    padding: 0 1rem .75rem 0;
+}
+
+
+.qualifications ul li {
+    margin-bottom: .25em;
+}
+
+.petit {
+    font-size: .8em;
+}

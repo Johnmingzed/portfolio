@@ -1,0 +1,15 @@
+#skills .card {
+    grid-area: a;
+}
+
+#skills .infos {
+    grid-area: b;
+}
+
+#skills .tech.right {
+    grid-area: c;
+}
+
+#skills .tech.left {
+    grid-area: d;
+}

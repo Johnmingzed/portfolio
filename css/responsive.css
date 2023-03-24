@@ -1,0 +1,127 @@
+@media screen {
+    header {
+        grid-template-areas:
+            "jpc"
+            "dev"
+            "navbar";
+    }
+
+    #about {
+        display: grid;
+        grid-template-rows: auto;
+    }
+
+    .portrait {
+        display: none;
+    }
+
+    #skills {
+        display: grid;
+        grid-template-areas:
+            "a a"
+            "b b"
+            "c d";
+    }
+
+    #soft_skills {
+        display: grid;
+        grid-template-areas:
+            "b"
+            "a";
+    }
+
+    #projects {
+        display: grid;
+        grid-template-areas:
+            "rubrique"
+            "b"
+            "c"
+            "d"
+            "e";
+    }
+
+    #contact {
+        display: grid;
+        grid-template-areas:
+            "rubrique"
+            "form"
+            "sys_message";
+    }
+
+
+}
+
+@media screen and (min-width:600px) {
+
+    #about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #skills {
+        display: grid;
+        grid-template-areas:
+            "c a d"
+            "b b b";
+    }
+}
+
+@media screen and (min-width: 700px) {
+    header {
+        grid-template-areas:
+            "jpc dev"
+            "navbar navbar";
+    }
+}
+
+@media screen and (min-width: 890px) {
+
+    #about {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+    }
+
+    .portrait {
+        display: block;
+    }
+
+    #skills {
+        display: grid;
+        grid-template-areas:
+            "a c d"
+            "b c d";
+    }
+
+    #soft_skills {
+        display: grid;
+        grid-template-areas:
+            "a b";
+    }
+
+    #projects {
+        display: grid;
+        grid-template-areas:
+            "rubrique rubrique"
+            "b c"
+            "d e";
+    }
+
+    form {
+        display: grid;
+        grid-template-areas:
+            "message fistname"
+            "message lastname"
+            "message mail"
+            "message submit";
+        grid-template-columns: 2fr 1fr;
+    }
+
+}
+
+@media screen and (min-width: 1510px) {
+    header {
+        grid-template-areas:
+            "jpc navbar dev";
+        grid-template-columns: auto 1fr auto;
+    }
+}

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=JetBrains+Mono&family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+@import url('animations.css');
+@import url('variables.css');
+@import url('base.css');
+@import url('layout.css');
+@import url('header.css');
+@import url('modules.css');
+@import url('about.css');
+@import url('skills.css');
+@import url('soft_skills.css');
+@import url('projects.css');
+@import url('contact.css');
+@import url('footer.css');
+@import url('responsive.css');
+@import url('fx.css');
+
+@font-face {
+    font-family: "Big Noodle";
+    src: url("fonts/BIG_NOODLE_TITLING.TTF") format("truetype");
+    font-weight: unset;
+}
+
+/*
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'JetBrains Mono', monospace;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Ubuntu Condensed', sans-serif;
+*/
+
+.deco {
+    position: relative;
+}
+
+.deco::before {
+    content: "«";
+    color: var(--decoration-color);
+    padding: 0 .25em;
+}
+
+h1.deco:last-of-type::after {
+    content: ';';
+    color: var(--decoration-color);
+    padding-left: .25em;
+}
+
+/* .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: .5em 1em;
+} */
+
+.jpc {
+    grid-area: jpc;
+}
+
+.dev {
+    grid-area: dev;
+    justify-self: end;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+    justify-self: end;
+    margin: 0;
+    padding: 0;
+    grid-area: navbar;
+}
+
+header h2 {
+    padding: 0;
+}
+
+strong {
+    color: var(--dark-color);
+    font-weight: 500;
+}

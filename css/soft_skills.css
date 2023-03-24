@@ -1,0 +1,7 @@
+#soft_skills .infos{
+    grid-area: a;
+}
+
+#soft_skills .card {
+    grid-area: b;
+}

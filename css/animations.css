@@ -1,0 +1,56 @@
+.nom {
+    font-size: 4vw;
+    padding: .5em;
+    border: .08em solid var(--light-color);
+    opacity: 1;
+    animation: fadein var(--intro-speed) ease-in-out var(--intro-delay);
+    animation-fill-mode: forwards;
+    background-color: rgba(255, 255, 255, .2);
+    visibility: hidden;
+}
+
+#typing {
+    animation: entering var(--intro-speed) steps(24) var(--intro-delay), blink .25s step-end infinite alternate;
+    color: var(--light-color);
+    box-sizing: border-box;
+    font-family: var(--font-display);
+    padding-right: .08em;
+    border-right: .08em solid var(--light-color);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes entering {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 0.01%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        font-size: 20vw;
+        visibility: hidden;
+    }
+
+    50%,
+    100% {
+        opacity: 1;
+        font-size: 4vw;
+        visibility: visible;
+    }
+}
