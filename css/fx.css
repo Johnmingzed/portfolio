@@ -74,9 +74,10 @@
     transform: translatez(0rem);
 }
 
-.relief h2,
+.relief:not(.tech) h2,
 .relief h3 {
     border-radius: var(--radius) var(--radius) 0 0;
+    border: .075rem solid var(--white);
 }
 
 .relief:hover {

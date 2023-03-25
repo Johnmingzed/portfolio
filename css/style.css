@@ -57,7 +57,6 @@ h1.deco:last-of-type::after {
 
 .dev {
     grid-area: dev;
-    justify-self: end;
 }
 
 .navbar {

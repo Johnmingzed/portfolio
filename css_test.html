@@ -13,49 +13,82 @@
             justify-content: center;
             align-items: center;
             height: 100dvh;
+            background-color: cadetblue;
         }
 
-        button {
-            background: transparent;
-            border: unset;
+        .projet {
+            width: 20rem;
         }
 
-        button {
-            padding: 1rem;
-            width: 30rem;
-            position: relative;
-            box-shadow: 0 0 50px #000;
+        .projet {
+            border-radius: var(--radius);
+            border: .075rem solid var(--white);
+            min-width: 20ch;
+        }
+
+        .preview,
+        .wip {
+            box-sizing: border-box;
+            height: 12rem;
+            flex-grow: 1;
+            background-color: var(--decoration-color);
+            border-bottom: .075rem solid var(--white);
             overflow: hidden;
-            border-radius: .5rem;
         }
 
-        button::before {
-            z-index: -1;
-            inset: -500% -20%;
-            background: conic-gradient(green,lime, green, lime, green);
-            filter:blur(10px);
-            content: "";
-            position: absolute;
-            transition: 500ms;
-            animation: 1s rotation linear infinite;
-            transition: 1s;
+        .preview img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: var(--hover-speed);
         }
 
-        @keyframes rotation {
-            from {
-                transform: rotate(00deg);
-            }
+        .wip img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            filter: saturate(0) contrast(1.5);
+            mix-blend-mode: overlay;
+            transition: var(--hover-speed);
+        }
 
-            to {
-                transform: rotate(360deg);
-            }
+        /* .preview a img:hover, .preview a img:focus {
+    filter: saturate(1) contrast(1);
+    mix-blend-mode: normal;
+    transform: scale(1.2, 1.2);
+} */
+
+        .preview:hover img,
+        .preview:focus img {
+            filter: saturate(1) contrast(1);
+            mix-blend-mode: normal;
+            transform: scale(1.2, 1.2);
+            z-index: 2;
+        }
+
+        .synopsis {
+            padding: 1rem;
+            font-family: var(--font-mono);
+            font-size: clamp(1rem, .15vw + 1rem, 1.5rem);
+            line-height: 1.5em;
+            text-align: center;
         }
     </style>
 
 </head>
 
 <body>
-    <button type="submit">ENVOYER</button>
+    <div class="projet relief">
+        <h3>Oscillo Théâtroscope</h3>
+        <div class="preview">
+            <a href="https://www.oscillo-theatroscope.com" target="_blank"><img src="css/images/oscillo.png"
+                    alt="Apperçu du site de l'Oscillo Théâtroscope"></a>
+        </div>
+        <div class="synopsis">
+            Site web dynamique pour une salle de spectacle incluant un agenda et le back-office nécessaire à sa
+            gestion.
+        </div>
+    </div>
 </body>
 
 </html>

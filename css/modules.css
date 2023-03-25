@@ -71,6 +71,10 @@
 
 /* =============== projet =============== */
 
+.projet h3 {
+    border-radius: var(--radius) var(--radius) 0 0;
+    border: .075rem solid var(--white);
+}
 .projet {
     border-radius: var(--radius);
     border: .075rem solid var(--white);
@@ -81,7 +85,7 @@
     height: 12rem;
     flex-grow:1;
     background-color: var(--decoration-color);
-    border-bottom: .075rem solid var(--white);
+    border: .075rem solid var(--white);
     overflow: hidden;
 }
 

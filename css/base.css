@@ -14,7 +14,7 @@ h1 {
     text-transform: uppercase;
     font-weight: normal;
     margin: 0;
-    font-size: clamp(2.1rem, 1vw + 2rem, 3.18rem);
+    /* font-size in responsive.css */
     flex-shrink: 0;
 }
 
