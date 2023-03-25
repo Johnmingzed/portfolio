@@ -35,7 +35,7 @@ if (isset($_POST) && !empty($_POST)) {
         $mail->addAddress($config['receiver']);
 
         $mail->isHTML(true);
-        $mail->Subject = 'Message de : ' . $firstname . ' ' . $lastname;
+        $mail->Subject = 'Message via le Portfolio : ' . $firstname . ' ' . $lastname;
         $mail->Body = '<strong>Nom : </strong>' . strtoupper($lastname) . '<br><strong>Prénom : </strong>' . ucfirst(strtolower($firstname)) . '<br><strong>E-mail : </strong>' . $email . '<br><strong>Message : </strong>' . nl2br($message) . '';
 
         $mail->send();

@@ -198,7 +198,7 @@ if (isset($_SESSION['alert'])) {
             <div class="projet shadow">
                 <h3>J&D Odyssey</h3>
                 <div class="wip">
-                    <img src="css/images/affiche Odyssey non datée.jpg" alt="Affiche du spectacle J&D Odyssey">
+                    <img src="css/images/affiche_odyssey.jpg" alt="Affiche du spectacle J&D Odyssey">
                 </div>
                 <div class="synopsis">
                     Conception, réalisation et automatisation d'une régie de spectacle multimedia. </div>
@@ -257,7 +257,7 @@ if (isset($_SESSION['alert'])) {
     </main>
     <footer>
         <h2><a href="#" class="clr-light">Mentions Légales</a></h2>
-        <a href="files/CV Jonathan PAIN-CHAMMING'S (2023).pdf" target="_blank" class="center">Télécharger mon CV</a>
+        <a href="files/cv_jonathan_painchamming.pdf" target="_blank" class="center">Télécharger mon CV</a>
         <ul class="social">
             <li><a href="https://github.com/Johnmingzed" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
