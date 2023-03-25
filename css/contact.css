@@ -78,11 +78,11 @@ button {
     padding: .5rem;
     color: var(--bg-color2);
     width: 100%;
-    resize: vertical;
 }
 
 textarea {
     height: 100%;
+    resize: vertical;
 }
 
 button[type="submit"] {
@@ -114,16 +114,17 @@ button[type="submit"]:focus{
 
 button[type="submit"]::before {
     z-index: -1;
-    inset: -500% -20%;
+    inset: -1000% -20%;
     position: absolute;
     content: "";
     background: conic-gradient(var(--bg-color1), var(--bg-color2), var(--bg-color3), var(--bg-color2), var(--bg-color1));
+    filter:blur(1rem);
     animation: waiting 1s linear infinite;
 }
 
 @keyframes waiting {
     from {
-        transform: rotate(00deg);
+        transform: rotate(0deg);
     }
 
     to {
