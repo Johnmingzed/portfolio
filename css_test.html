@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100dvh;
+        }
+
+        button {
+            background: transparent;
+            border: unset;
+        }
+
+        button {
+            padding: 1rem;
+            width: 30rem;
+            position: relative;
+            box-shadow: 0 0 50px #000;
+            overflow: hidden;
+            border-radius: .5rem;
+        }
+
+        button::before {
+            z-index: -1;
+            inset: -500% -20%;
+            background: conic-gradient(green,lime, green, lime, green);
+            filter:blur(10px);
+            content: "";
+            position: absolute;
+            transition: 500ms;
+            animation: 1s rotation linear infinite;
+            transition: 1s;
+        }
+
+        @keyframes rotation {
+            from {
+                transform: rotate(00deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <button type="submit">ENVOYER</button>
+</body>
+
+</html>

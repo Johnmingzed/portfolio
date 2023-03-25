@@ -58,6 +58,7 @@ fieldset {
     align-items: start;
     justify-content: start;
     width: 100%;
+    z-index: 1;
 }
 
 label {
@@ -68,7 +69,8 @@ label {
 }
 
 input,
-textarea {
+textarea,
+button {
     box-sizing: border-box;
     border: none;
     border-radius: var(--radius);
@@ -83,7 +85,7 @@ textarea {
     height: 100%;
 }
 
-input[type="submit"] {
+button[type="submit"] {
     box-shadow: none;
     cursor: pointer;
     font-family: var(--font-display);
@@ -95,35 +97,36 @@ input[type="submit"] {
     width: 100%;
     box-shadow: 0 0 0rem var(--shadow);
     transition: var(--hover-speed);
+    position: relative;
+    overflow: hidden;
 }
 
-input[type="submit"]:hover
- {
+button[type="submit"]:hover {
     box-shadow: 0 0 .5rem var(--shadow);
     color: var(--bg-color1);
     background-color: var(--white);
 }
 
-@property --gradient-angle {
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
+button[type="submit"]:focus{
+    color: var(--white);
+    background-color: transparent;
 }
 
-input[type="submit"]:focus {
-    color: var(--white);
-    background: conic-gradient(from var(--gradient-angle), var(--bg-color1), var(--bg-color2), var(--bg-color3), var(--bg-color2), var(--bg-color1));
-    /* background: conic-gradient(from var(--gradient-angle), var(--bg-color1), var(--white), var(--bg-color1)); */
+button[type="submit"]::before {
+    z-index: -1;
+    inset: -500% -20%;
+    position: absolute;
+    content: "";
+    background: conic-gradient(var(--bg-color1), var(--bg-color2), var(--bg-color3), var(--bg-color2), var(--bg-color1));
     animation: waiting 1s linear infinite;
 }
 
-
 @keyframes waiting {
     from {
-        --gradient-angle: 0deg;
+        transform: rotate(00deg);
     }
 
     to {
-        --gradient-angle: 360deg;
+        transform: rotate(360deg);
     }
 }

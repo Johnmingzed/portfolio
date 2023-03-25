@@ -244,7 +244,7 @@ if (isset($_SESSION['alert'])) {
                     <input type="email" name="mail" id="mail" required>
                 </fieldset>
                 <fieldset class="form-submit">
-                    <input type="submit" value="ENVOYER">
+                    <button type="submit">ENVOYER</button>
                 </fieldset>
             </form>
             <?php
