@@ -8,86 +8,172 @@
     <title>Document</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            text-align: center;
+            /* Outline property is used to force anti-aliasing on Firefox */
+            outline: 1px solid transparent;
+        }
+
         body {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100dvh;
+            height: 90vh;
             background-color: cadetblue;
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
         }
 
-        .projet {
-            width: 20rem;
-        }
-
-        .projet {
-            border-radius: var(--radius);
-            border: .075rem solid var(--white);
-            min-width: 20ch;
-        }
-
-        .preview,
-        .wip {
-            box-sizing: border-box;
-            height: 12rem;
-            flex-grow: 1;
-            background-color: var(--decoration-color);
-            border-bottom: .075rem solid var(--white);
-            overflow: hidden;
-        }
-
-        .preview img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            transition: var(--hover-speed);
-        }
-
-        .wip img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            filter: saturate(0) contrast(1.5);
-            mix-blend-mode: overlay;
-            transition: var(--hover-speed);
-        }
-
-        /* .preview a img:hover, .preview a img:focus {
-    filter: saturate(1) contrast(1);
-    mix-blend-mode: normal;
-    transform: scale(1.2, 1.2);
-} */
-
-        .preview:hover img,
-        .preview:focus img {
-            filter: saturate(1) contrast(1);
-            mix-blend-mode: normal;
-            transform: scale(1.2, 1.2);
-            z-index: 2;
-        }
-
-        .synopsis {
+        .jaune {
+            width: 400px;
             padding: 1rem;
-            font-family: var(--font-mono);
-            font-size: clamp(1rem, .15vw + 1rem, 1.5rem);
-            line-height: 1.5em;
-            text-align: center;
+            background-color: yellow;
+            gap: 1rem;
+            display: grid;
+            transform: perspective(125rem) rotate3d(0, 0, 0, 20deg);
+            transform-style: preserve-3d;
+            transition: 1000ms;
+            position: relative;
+        }
+
+        h3 {
+            color: #fff;
+            padding: 1rem;
+            background-color: green;
+        }
+
+        .violet {
+            /* A new stacking context is created for each group of nested elements */
+            padding: 2rem;
+            background-color: blueviolet;
+            /* Warning : Using opacity and some others property force flattening every nested elements */
+            opacity: 1;
+            position: relative;
+        }
+
+        .blanc {
+            padding: 2rem;
+            height: 200px;
+            background-color: white;
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            position: absolute;
+            bottom: 2.5rem;
+            right: 2.5rem;
+        }
+
+        .bleu {
+            color: #fff;
+            padding: 0.5rem;
+            background-color: blue;
+        }
+
+        .gris {
+            padding: 2rem;
+            background-color: grey;
+        }
+
+        /* Z-axis position init */
+        h3,
+        .violet,
+        .blanc,
+        .flex,
+        .bleu,
+        .gris {
+            /* We need to set transform-style to be able to use Z axis for each group of nested elements or siblings like ::before */
+            transform-style: preserve-3d;
+            transform: translateZ(1px);
+            transition: inherit;
+        }
+
+        .bleu {
+            /* Rather than a Z-index, we increase the initial height to make this element pass over its sibling */
+            transform: translateZ(2px);
+        }
+
+        /* Here we define the perspective settings and desired orientation */
+        .jaune:hover {
+            transform: perspective(125rem) rotate3d(1, 1, 0, 40deg);
+        }
+
+        /* Shadow effect creation : We apply a -1px translation on Z-axis to prevent shadow overlaping above its source */
+        .blanc::before,
+        .bleu::before,
+        .gris::before,
+        .violet::before,
+        h3::before {
+            inset: 0;
+            content: "";
+            background-color: #000;
+            position: absolute;
+            transform: translateZ(-1px);
+            filter: blur(5px);
+            opacity: 0.3;
+            transition: inherit;
+        }
+
+        /* Z-axis displacement on hovering */
+        .jaune:hover h3 {
+            transform: translateZ(6rem);
+        }
+
+        .jaune:hover .violet {
+            transform: translateZ(4rem);
+        }
+
+        .jaune:hover .blanc {
+            transform: translateZ(2rem);
+        }
+
+        .jaune:hover .bleu {
+            transform: translateZ(4rem);
+        }
+
+        .jaune:hover .gris {
+            transform: translateZ(2rem);
+        }
+
+        /* Shadows displacement : We add 1px to ensure that the shadow does not pass behind its support */
+        .jaune:hover h3::before {
+            transform: translateZ(calc(-6rem + 1px));
+        }
+
+        .jaune:hover .violet::before {
+            transform: translateZ(calc(-4rem + 1px));
+        }
+
+        .jaune:hover .blanc::before {
+            transform: translateZ(calc(-2rem + 1px));
+        }
+
+        .jaune:hover .bleu::before {
+            transform: translateZ(calc(-2rem + 1px));
+        }
+
+        .jaune:hover .gris::before {
+            transform: translateZ(calc(-2rem + 1px));
         }
     </style>
 
 </head>
 
 <body>
-    <div class="projet relief">
-        <h3>Oscillo Théâtroscope</h3>
-        <div class="preview">
-            <a href="https://www.oscillo-theatroscope.com" target="_blank"><img src="css/images/oscillo.png"
-                    alt="Apperçu du site de l'Oscillo Théâtroscope"></a>
+    <div class="jaune">
+        <h3>Titre vert</h3>
+        <div class="violet">
+            <div class="blanc">Image</div>
+            <div class="flex">
+                <div class="bleu">Tags</div>
+                <div class="bleu">Tags</div>
+                <div class="bleu">Tags</div>
+            </div>
         </div>
-        <div class="synopsis">
-            Site web dynamique pour une salle de spectacle incluant un agenda et le back-office nécessaire à sa
-            gestion.
-        </div>
+        <div class="gris">Text</div>
     </div>
 </body>
 

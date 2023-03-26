@@ -189,6 +189,12 @@ if (isset($_SESSION['alert'])) {
                 <div class="preview">
                     <a href="https://www.oscillo-theatroscope.com" target="_blank"><img src="css/images/oscillo.png"
                             alt="Apperçu du site de l'Oscillo Théâtroscope"></a>
+                    <ul class="tags">
+                        <li class="tag">HTML</li>
+                        <li class="tag">CSS</li>
+                        <li class="tag">PHP</li>
+                        <li class="tag">MySQL</li>
+                    </ul>
                 </div>
                 <div class="synopsis">
                     Site web dynamique pour une salle de spectacle incluant un agenda et le back-office nécessaire à sa
@@ -196,9 +202,14 @@ if (isset($_SESSION['alert'])) {
                 </div>
             </div>
             <div class="projet shadow">
-                <h3>J&D Odyssey</h3>
+                <h3>J&D Experience</h3>
                 <div class="wip">
                     <img src="css/images/affiche_odyssey.jpg" alt="Affiche du spectacle J&D Odyssey">
+                    <ul class="tags">
+                        <li class="tag">QLC+</li>
+                        <li class="tag">DMX</li>
+                        <li class="tag">Bash</li>
+                    </ul>
                 </div>
                 <div class="synopsis">
                     Conception, réalisation et automatisation d'une régie de spectacle multimedia. </div>
@@ -207,9 +218,12 @@ if (isset($_SESSION['alert'])) {
                 <h3>4k or Not <span class="clr-light petit">work in progress</span></h3>
                 <div class="wip">
                     <img src="css/images/4k.jpg" alt="Image 4K">
+                    <ul class="tags">
+                        <li class="tag relier">C++</li>
+                    </ul>
                 </div>
                 <div class="synopsis">
-                    Application d'aide au choix d'une résolution d'un écran en fonction de sa distance de visionnage.
+                    Application d'aide au choix de la résolution d'un écran en fonction de sa distance de visionnage.
                 </div>
             </div>
             <div class="projet relief">
@@ -217,6 +231,12 @@ if (isset($_SESSION['alert'])) {
                 <div class="preview">
                     <a href="http://www.jonathanetdavid.com" target="_blank"><img src="css/images/jonathanetdavid.png"
                             alt="Apperçu du site de Jonathan&David"></a>
+                    <ul class="tags">
+                        <li class="tag">HTML</li>
+                        <li class="tag">CSS</li>
+                        <li class="tag">PHP</li>
+                        <li class="tag">C++</li>
+                    </ul>
                 </div>
                 <div class="synopsis">
                     Site vitrine one-page avec intégration d'API Facebook, Soundcloud et une bannière
@@ -259,7 +279,16 @@ if (isset($_SESSION['alert'])) {
         <h2><a href="#" class="clr-light">Mentions Légales</a></h2>
         <a href="files/cv_jonathan_painchamming.pdf" target="_blank" class="center">Télécharger mon CV</a>
         <ul class="social">
-            <li><a href="https://github.com/Johnmingzed" target="_blank">
+            <li>
+                <a href="https://codepen.io/Johnmingzed/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                            d="M502.285 159.704l-234-156c-7.987-4.915-16.511-4.96-24.571 0l-234 156C3.714 163.703 0 170.847 0 177.989v155.999c0 7.143 3.714 14.286 9.715 18.286l234 156.022c7.987 4.915 16.511 4.96 24.571 0l234-156.022c6-3.999 9.715-11.143 9.715-18.286V177.989c-.001-7.142-3.715-14.286-9.716-18.285zM278 63.131l172.286 114.858-76.857 51.429L278 165.703V63.131zm-44 0v102.572l-95.429 63.715-76.857-51.429L234 63.131zM44 219.132l55.143 36.857L44 292.846v-73.714zm190 229.715L61.714 333.989l76.857-51.429L234 346.275v102.572zm22-140.858l-77.715-52 77.715-52 77.715 52-77.715 52zm22 140.858V346.275l95.429-63.715 76.857 51.429L278 448.847zm190-156.001l-55.143-36.857L468 219.132v73.714z" />
+                    </svg></a>
+            </li>
+            <li>
+                <a href="https://github.com/Johnmingzed" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
                         <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                         <path

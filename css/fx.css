@@ -48,30 +48,39 @@
     transform: perspective(125rem) rotate3d(0, 0, 0, 10deg);
     transform-style: preserve-3d;
     transition: calc(var(--hover-speed)*3);
-    z-index: 1;
     position: relative;
 }
 
 .relief::before {
-    z-index: -1;
     inset: 0;
     content: "";
     background-color: var(--shadow);
-    border-radius: inherit;
     position: absolute;
+    border-radius: inherit;
     filter: blur(.5rem);
-    transform: translateZ(-.1rem);
     transition: inherit;
+    transform: translateZ(-1px);
 }
+
+/* .tag::before {
+    background-color: var(--debug);
+} */
 
 .relief p,
 .relief h2,
 .relief ul,
 .relief .preview,
+.relief .tags,
+.relief .tag,
 .relief h3,
 .relief .synopsis {
+    transform-style: preserve-3d;
     transition: inherit;
-    transform: translatez(0rem);
+    transform: translateZ(1px);
+}
+
+.relief .tag {
+    transform: translateZ(2px);
 }
 
 .relief:not(.tech) h2,
@@ -88,19 +97,26 @@
 .relief:hover h2,
 .relief:hover ul,
 .relief:hover .preview,
+.relief:hover .tag,
 .relief:hover h3,
 .relief:hover .synopsis {
-    transform: inherit;
-    transition: inherit;
-    transform: translatez(2rem);
-    text-shadow: -.5rem .25rem .15rem var(--shadow);
+    transform: translateZ(2rem);
+    /* text-shadow: -.5rem .25rem .15rem var(--shadow); */
 }
 
-.relief:hover::before {
+.relief:hover::before,
+.relief:hover .tag::before {
     transform: translateZ(-4rem);
-    filter: blur(.15rem);
+}
+
+.relief:hover .tag {
+    transform: translateZ(6rem);
 }
 
 .relief:hover .preview {
-    transform: translatez(4rem);
+    transform: translateZ(4rem);
+}
+
+.relief:hover h3 {
+    transform: translateZ(8rem);
 }
