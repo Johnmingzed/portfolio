@@ -51,7 +51,8 @@
     position: relative;
 }
 
-.relief::before {
+.relief::before,
+.tag::before {
     inset: 0;
     content: "";
     background-color: var(--shadow);
@@ -62,21 +63,18 @@
     transform: translateZ(-1px);
 }
 
-/* .tag::before {
-    background-color: var(--debug);
-} */
-
 .relief p,
 .relief h2,
 .relief ul,
 .relief .preview,
-.relief .tags,
 .relief .tag,
+.relief a,
 .relief h3,
 .relief .synopsis {
     transform-style: preserve-3d;
     transition: inherit;
     transform: translateZ(1px);
+    outline: 1px solid transparent;
 }
 
 .relief .tag {
@@ -96,27 +94,47 @@
 .relief:hover p,
 .relief:hover h2,
 .relief:hover ul,
-.relief:hover .preview,
-.relief:hover .tag,
 .relief:hover h3,
 .relief:hover .synopsis {
     transform: translateZ(2rem);
-    /* text-shadow: -.5rem .25rem .15rem var(--shadow); */
-}
-
-.relief:hover::before,
-.relief:hover .tag::before {
-    transform: translateZ(-4rem);
+    text-shadow: -.5rem .25rem .15rem var(--shadow);
 }
 
 .relief:hover .tag {
-    transform: translateZ(6rem);
+    text-shadow: -.25rem .125rem .15rem var(--shadow);
+}
+
+.static:hover {
+    transform: unset;
+}
+
+.static:hover p,
+.static:hover h2,
+.static:hover ul,
+.static:hover .preview,
+.static:hover .tag,
+.static:hover h3,
+.static:hover .synopsis {
+    text-shadow: unset;
+    transition:5s;
+}
+
+.relief:hover::before {
+    transform: translateZ(-4rem);
+}
+
+.relief:hover .tag::before {
+    transform: translateZ(calc(-2rem + 1px));
+}
+
+.relief:hover .tag {
+    transform: translateZ(2rem);
 }
 
 .relief:hover .preview {
-    transform: translateZ(4rem);
+    transform: translateZ(3rem);
 }
 
 .relief:hover h3 {
-    transform: translateZ(8rem);
+    transform: translateZ(4rem);
 }

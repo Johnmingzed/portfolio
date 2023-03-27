@@ -7,6 +7,7 @@
     font-size: clamp(1rem, .25vw + 1rem, 1.5rem);
     line-height: 1.7em;
     min-width: 25ch;
+    outline: 1px solid transparent;
 }
 
 .card h2,
@@ -51,6 +52,7 @@
 .tech {
     border-radius: var(--radius);
     background-color: var(--bg-trans);
+    outline: 1px solid transparent;
 }
 
 .tech ul {
@@ -81,17 +83,25 @@
     border-radius: var(--radius);
     border: .075rem solid var(--white);
     min-width: 20ch;
+    outline: 1px solid transparent;
 }
 
-.preview,
-.wip {
+.preview {
     box-sizing: border-box;
     height: 12rem;
     flex-grow: 1;
-    background-color: var(--decoration-color);
     border: .075rem solid var(--white);
-    overflow: hidden;
     position: relative;
+    outline: 1px solid transparent;
+    transform: translateZ(0px);
+}
+
+.image_container {
+    overflow: hidden;
+    height: inherit;
+    outline: 1px solid transparent;
+    background-color: var(--decoration-color);
+    transform: translateZ(1px);
 }
 
 .preview img {
@@ -102,22 +112,12 @@
 }
 
 .wip img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    filter: saturate(0) contrast(1.5);
     mix-blend-mode: overlay;
-    transition: var(--hover-speed);
+    filter: saturate(0) contrast(1.5);
 }
 
-/* .preview a img:hover, .preview a img:focus {
-    filter: saturate(1) contrast(1);
-    mix-blend-mode: normal;
-    transform: scale(1.2, 1.2);
-} */
-
-.preview:hover img,
-.preview:focus img {
+.preview:hover :not(.wip) img,
+.preview:focus :not(.wip) img {
     filter: saturate(1) contrast(1);
     transform: scale(1.2, 1.2);
 }
@@ -142,6 +142,7 @@
     flex-wrap: wrap;
     justify-content: end;
     gap: .5em;
+    transform: translateZ(2px);
 }
 
 .tag {
@@ -149,6 +150,7 @@
     font-family: var(--font-mono);
     border-radius: var(--radius);
     padding: .5em 1em;
+    transform: translateZ(3px);
 }
 
 /* =============== contact =============== */

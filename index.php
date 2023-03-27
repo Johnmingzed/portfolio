@@ -187,8 +187,11 @@ if (isset($_SESSION['alert'])) {
             <div class="projet relief">
                 <h3>Oscillo Théâtroscope</h3>
                 <div class="preview">
-                    <a href="https://www.oscillo-theatroscope.com" target="_blank"><img src="css/images/oscillo.png"
-                            alt="Apperçu du site de l'Oscillo Théâtroscope"></a>
+                    <div class="image_container">
+                        <a href="https://www.oscillo-theatroscope.com" target="_blank">
+                            <img src="css/images/oscillo.png" alt="Apperçu du site de l'Oscillo Théâtroscope">
+                        </a>
+                    </div>
                     <ul class="tags">
                         <li class="tag">HTML</li>
                         <li class="tag">CSS</li>
@@ -201,10 +204,12 @@ if (isset($_SESSION['alert'])) {
                     gestion.
                 </div>
             </div>
-            <div class="projet shadow">
+            <div class="projet relief static">
                 <h3>J&D Experience</h3>
-                <div class="wip">
-                    <img src="css/images/affiche_odyssey.jpg" alt="Affiche du spectacle J&D Odyssey">
+                <div class="preview">
+                    <div class="image_container wip">
+                        <img src="css/images/affiche_odyssey.jpg" alt="Affiche du spectacle J&D Odyssey">
+                    </div>
                     <ul class="tags">
                         <li class="tag">QLC+</li>
                         <li class="tag">DMX</li>
@@ -214,12 +219,14 @@ if (isset($_SESSION['alert'])) {
                 <div class="synopsis">
                     Conception, réalisation et automatisation d'une régie de spectacle multimedia. </div>
             </div>
-            <div class="projet shadow">
+            <div class="projet relief static">
                 <h3>4k or Not <span class="clr-light petit">work in progress</span></h3>
-                <div class="wip">
-                    <img src="css/images/4k.jpg" alt="Image 4K">
+                <div class="preview">
+                    <div class="image_container wip">
+                        <img src="css/images/4k.jpg" alt="Image 4K">
+                    </div>
                     <ul class="tags">
-                        <li class="tag relier">C++</li>
+                        <li class="tag">C++</li>
                     </ul>
                 </div>
                 <div class="synopsis">
@@ -229,13 +236,14 @@ if (isset($_SESSION['alert'])) {
             <div class="projet relief">
                 <h3>Jonathan&David</h3>
                 <div class="preview">
-                    <a href="http://www.jonathanetdavid.com" target="_blank"><img src="css/images/jonathanetdavid.png"
-                            alt="Apperçu du site de Jonathan&David"></a>
+                    <div class="image_container">
+                        <a href="http://www.jonathanetdavid.com" target="_blank"><img
+                                src="css/images/jonathanetdavid.png" alt="Apperçu du site de Jonathan&David"></a>
+                    </div>
                     <ul class="tags">
                         <li class="tag">HTML</li>
                         <li class="tag">CSS</li>
                         <li class="tag">PHP</li>
-                        <li class="tag">C++</li>
                     </ul>
                 </div>
                 <div class="synopsis">
