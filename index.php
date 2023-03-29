@@ -189,7 +189,7 @@ if (isset($_SESSION['alert'])) {
                 <div class="preview">
                     <div class="image_container">
                         <a href="https://www.oscillo-theatroscope.com" target="_blank">
-                            <img src="css/images/oscillo.png" alt="Apperçu du site de l'Oscillo Théâtroscope">
+                            <img src="css/images/oscillo.jpg" alt="Apperçu du site de l'Oscillo Théâtroscope">
                         </a>
                     </div>
                     <ul class="tags">
@@ -238,7 +238,7 @@ if (isset($_SESSION['alert'])) {
                 <div class="preview">
                     <div class="image_container">
                         <a href="http://www.jonathanetdavid.com" target="_blank"><img
-                                src="css/images/jonathanetdavid.png" alt="Apperçu du site de Jonathan&David"></a>
+                                src="css/images/jonathanetdavid.jpg" alt="Apperçu du site de Jonathan&David"></a>
                     </div>
                     <ul class="tags">
                         <li class="tag">HTML</li>
@@ -285,7 +285,7 @@ if (isset($_SESSION['alert'])) {
     </main>
     <footer>
         <h2><a href="#" class="clr-light">Mentions Légales</a></h2>
-        <a href="files/cv_jonathan_painchamming.pdf" target="_blank" class="center">Télécharger mon CV</a>
+        <a href="files/cv_jonathan_painchammings.pdf" target="_blank" class="center">Télécharger mon CV</a>
         <ul class="social">
             <li>
                 <a href="https://codepen.io/Johnmingzed/" target="_blank">
