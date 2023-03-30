@@ -14,6 +14,7 @@ if (isset($_SESSION['alert'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Jonathan PAIN-CHAMMING'S, Développeur Full Stack aux compétences de graphiste, astucieux, rigoureux et fiable, en formation auprès de l'AFPA d'Angoulème.">
     <title>Jonathan PAIN-CHAMMING'S - Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
@@ -48,11 +49,10 @@ if (isset($_SESSION['alert'])) {
             <div class="card-info">
                 <h2>à propos</h2>
                 <p>J’élabore du code avec <strong>astuce, rigueur et sensibilité esthétique</strong> pour créer des
-                    projets web et
-                    logiciels audacieux dans un esprit de collaboration.</p>
+                    projets web et logiciels audacieux dans un esprit de collaboration.</p>
             </div>
             <div class="portrait shadow">
-                <img src="css/images/jonathan.jpg" alt="Portrait de Jonathan PAIN-CHAMMING">
+                <img src="css/images/jonathan.webp" alt="Portrait de Jonathan PAIN-CHAMMING">
             </div>
             <div class="qualifications shadow">
                 <h2>Qualifications</h2>
@@ -189,7 +189,7 @@ if (isset($_SESSION['alert'])) {
                 <div class="preview">
                     <div class="image_container">
                         <a href="https://www.oscillo-theatroscope.com" target="_blank">
-                            <img src="css/images/oscillo.jpg" alt="Apperçu du site de l'Oscillo Théâtroscope">
+                            <img src="css/images/oscillo.webp" alt="Apperçu du site de l'Oscillo Théâtroscope">
                         </a>
                     </div>
                     <ul class="tags">
@@ -208,7 +208,7 @@ if (isset($_SESSION['alert'])) {
                 <h3>J&D Experience</h3>
                 <div class="preview">
                     <div class="image_container wip">
-                        <img src="css/images/affiche_odyssey.jpg" alt="Affiche du spectacle J&D Odyssey">
+                        <img src="css/images/photo_experience.webp" alt="Photo du spectacle J&D Experience">
                     </div>
                     <ul class="tags">
                         <li class="tag">QLC+</li>
@@ -223,7 +223,7 @@ if (isset($_SESSION['alert'])) {
                 <h3>4k or Not <span class="clr-light petit">work in progress</span></h3>
                 <div class="preview">
                     <div class="image_container wip">
-                        <img src="css/images/4k.jpg" alt="Image 4K">
+                        <img src="css/images/4k.webp" alt="Image 4K">
                     </div>
                     <ul class="tags">
                         <li class="tag">C++</li>
@@ -238,7 +238,7 @@ if (isset($_SESSION['alert'])) {
                 <div class="preview">
                     <div class="image_container">
                         <a href="http://www.jonathanetdavid.com" target="_blank"><img
-                                src="css/images/jonathanetdavid.jpg" alt="Apperçu du site de Jonathan&David"></a>
+                                src="css/images/jonathanetdavid.webp" alt="Apperçu du site de Jonathan&David"></a>
                     </div>
                     <ul class="tags">
                         <li class="tag">HTML</li>
@@ -288,7 +288,7 @@ if (isset($_SESSION['alert'])) {
         <a href="files/cv_jonathan_painchammings.pdf" target="_blank" class="center">Télécharger mon CV</a>
         <ul class="social">
             <li>
-                <a href="https://codepen.io/Johnmingzed/" target="_blank">
+                <a href="https://codepen.io/Johnmingzed/" target="_blank" aria-label="Voir mes travaux sur CodePen">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                         <path
@@ -296,7 +296,7 @@ if (isset($_SESSION['alert'])) {
                     </svg></a>
             </li>
             <li>
-                <a href="https://github.com/Johnmingzed" target="_blank">
+                <a href="https://github.com/Johnmingzed" target="_blank" aria-label="Voir mes travaux sur GitHub">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
                         <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                         <path
@@ -304,7 +304,7 @@ if (isset($_SESSION['alert'])) {
                     </svg></a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/jonathan-pain-chamming-s-8628b4238/" target="_blank"><svg
+                <a href="https://www.linkedin.com/in/jonathan-pain-chamming-s-8628b4238/" target="_blank" aria-label="Voir mon profil LinkedIn"><svg
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                         <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                         <path
