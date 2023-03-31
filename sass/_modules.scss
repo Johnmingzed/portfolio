@@ -140,7 +140,7 @@
     right: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: end;
+    justify-content: flex-end;
     gap: .5em;
     transform: translateZ(2px);
 }
@@ -152,5 +152,3 @@
     padding: .5em 1em;
     transform: translateZ(3px);
 }
-
-/* =============== contact =============== */

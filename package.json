@@ -1,0 +1,18 @@
+{
+    "name": "portfolio",
+    "main": "index.php",
+    "author": "Jonathan PAIN-CHAMMING'S",
+    "scripts": {
+        "start": "sass -w sass:css",
+        "build": "postcss css/style.css -u autoprefixer -r --no-map"
+    },
+    "dependencies": {
+        "autoprefixer": "^10.4.14",
+        "normalize.css": "^8.0.1",
+        "sass": "^1.60.0"
+    },
+    "devDependencies": {
+        "postcss": "^8.4.21",
+        "postcss-cli": "^10.1.0"
+    }
+}

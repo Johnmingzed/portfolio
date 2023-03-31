@@ -16,9 +16,6 @@ if (isset($_SESSION['alert'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio de Jonathan PAIN-CHAMMING'S, Développeur Full Stack aux compétences de graphiste, astucieux, rigoureux et fiable, en formation auprès de l'AFPA d'Angoulème.">
     <title>Jonathan PAIN-CHAMMING'S - Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
