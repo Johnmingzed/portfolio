@@ -15,6 +15,7 @@ if (isset($_SESSION['alert'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio de Jonathan PAIN-CHAMMING'S, Développeur Full Stack aux compétences de graphiste, astucieux, rigoureux et fiable, en formation auprès de l'AFPA d'Angoulème.">
+    <meta name="theme-color" content="#D9A05B"/>
     <title>Jonathan PAIN-CHAMMING'S - Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -168,7 +169,7 @@ if (isset($_SESSION['alert'])) {
             </div>
             <div class="card relief">
                 <h2>Soft skills</h2>
-                <ul>
+                <ul class="soft_skills">
                     <li>Travail en équipe et esprit d'inclusivité</li>
                     <li>Transmission, pédagogie, accessibilité</li>
                     <li>Méthodes agiles</li>

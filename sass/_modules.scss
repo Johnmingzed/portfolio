@@ -28,6 +28,11 @@
     color: var(--decoration-color);
 }
 
+ul.soft_skills li::marker {
+    content: "» \0000A0";
+    color: var(--decoration-color);
+}
+
 /* =============== infos =============== */
 
 .infos {
