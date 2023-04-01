@@ -1,10 +1,11 @@
 {
     "name": "portfolio",
-    "main": "index.php",
+    "main": "index.*",
     "author": "Jonathan PAIN-CHAMMING'S",
     "scripts": {
         "start": "sass -w sass:css",
-        "build": "postcss css/style.css -u autoprefixer -r --no-map"
+        "build": "postcss css/style.css -u autoprefixer -r --no-map",
+        "normalize": "cp node_modules/normalize.css/normalize.css sass/_normalize.scss"
     },
     "dependencies": {
         "autoprefixer": "^10.4.14",
