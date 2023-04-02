@@ -1,0 +1,10 @@
+node_modules/**/*
+sass/**/*
+.sass-cache/**/*
+*.sass.map
+*.scss.map
+desktop.ini
+phpmailer/config.php
+package.json
+package-lock.json
+.gitattributes
