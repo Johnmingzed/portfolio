@@ -6,7 +6,10 @@
         "start": "sass -w sass:css",
         "build": "postcss css/style.css -u autoprefixer -r --no-map",
         "normalize": "cp node_modules/normalize.css/normalize.css sass/_normalize.scss",
-        "prod": "git checkout prod && git merge --no-ff -X theirs main && git commit -m \"Mise en production\" && git push && git ftp push && git checkout main"
+        "clean": "rm -r sass && rm package.json && rm package-lock.json",
+        "commit": "git commit -m \"Mise en production - $(date +'%Y-%m-%d')\"",
+        "test": "echo $(date + '%Y-%m-%d')",
+        "prod": "git checkout prod && git merge -s ours main && npm run clean && npm run commit && git push && git ftp push && git checkout main"
     },
     "dependencies": {
         "autoprefixer": "^10.4.14",
