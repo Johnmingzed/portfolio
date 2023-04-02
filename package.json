@@ -10,7 +10,7 @@
         "cleantest": "test -d sass && echo \"sass OK\" ; test -f package.json && echo \"package.json OK\" ; test -f package-lock.json && echo \"package-lock.json OK \"",
         "commit": "git commit -m \"Mise en production\"",
         "test": "bash -c 'echo $(date +'%Y-%m-%d')'",
-        "prod": "git checkout prod && git merge -s ours main && npm run clean && npm run commit && git push && git ftp push && git checkout main"
+        "prod": "git checkout prod && git merge -X theirs main && npm run clean && npm run commit && git push && git ftp push && git checkout main"
     },
     "dependencies": {
         "autoprefixer": "^10.4.14",
