@@ -3,10 +3,10 @@
     "main": "index.*",
     "author": "Jonathan PAIN-CHAMMING'S",
     "scripts": {
-        "start": "sass -w sass:css",
-        "build": "postcss css/style.css -u autoprefixer -r --no-map",
+        "start": "NODE_ENV=development sass -w sass:css && run npm build",
+        "build": "postcss css/style.css -u autoprefixer -r --no-map --watch",
         "normalize": "cp node_modules/normalize.css/normalize.css sass/_normalize.scss",
-        "clean": "rm -r sass package-lock.json .gitignore",
+        "clean": "rimraf sass package-lock.json .gitignore",
         "commit": "git add -A && git commit -m \"Mise en production\"",
         "prod": "git checkout -B prod && npm run clean && npm run commit && git ftp push && git checkout main && git branch -D prod"
     },
