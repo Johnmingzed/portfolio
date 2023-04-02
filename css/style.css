@@ -73,8 +73,7 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -649,8 +648,7 @@ ul.soft_skills li::marker {
 .preview img {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: var(--hover-speed);
 }
 
@@ -706,8 +704,7 @@ ul.soft_skills li::marker {
 .portrait img {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   /*     filter: saturate(0) contrast(1.5);
       mix-blend-mode: overlay; */
 }
@@ -1251,3 +1248,5 @@ strong {
   color: var(--dark-color);
   font-weight: 500;
 }
+
+/*# sourceMappingURL=style.css.map */
