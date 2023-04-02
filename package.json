@@ -6,11 +6,9 @@
         "start": "sass -w sass:css",
         "build": "postcss css/style.css -u autoprefixer -r --no-map",
         "normalize": "cp node_modules/normalize.css/normalize.css sass/_normalize.scss",
-        "clean": "rm -r package*.json sass",
-        "cleantest": "test -d sass && echo \"sass OK\" ; test -f package.json && echo \"package.json OK\" ; test -f package-lock.json && echo \"package-lock.json OK \"",
+        "clean": "rm -r sass",
         "commit": "git add -A && git commit -m \"Mise en production\"",
-        "test": "bash -c 'echo $(date +'%Y-%m-%d')'",
-        "prod": "git checkout prod && git merge -X theirs main && npm run clean && npm run commit && git push && git ftp push && git checkout main"
+        "prod": "git checkout -B prod && npm run clean && npm run commit && git push && git ftp push && git checkout main && git branch -D prod"
     },
     "dependencies": {
         "autoprefixer": "^10.4.14",
