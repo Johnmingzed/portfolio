@@ -118,12 +118,13 @@ if (isset($_SESSION['alert'])) {
                     <li>PHP</li>
                     <li>HTML</li>
                     <li>CSS</li>
-                    <li>JS</li>
+                    <li>SASS</li>
+                    <li>JavaScript</li>
                     <li>React</li>
+                    <li>React Native</li>
                     <li>Python</li>
-                    <li>Sass</li>
                     <li>MySQL</li>
-                    <li>Bash</li>
+                    <li>Bash/Shell</li>
                     <li>GIT</li>
                     <li>Bootstrap</li>
                     <li>DMX</li>
