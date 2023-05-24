@@ -15,7 +15,7 @@ if (isset($_SESSION['alert'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio de Jonathan PAIN-CHAMMING'S, Développeur Full Stack aux compétences de graphiste, astucieux, rigoureux et fiable, en formation auprès de l'AFPA d'Angoulème.">
-    <meta name="theme-color" content="#D9A05B"/>
+    <meta name="theme-color" content="#D9A05B" />
     <title>Jonathan PAIN-CHAMMING'S - Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -99,6 +99,7 @@ if (isset($_SESSION['alert'])) {
                     <li>Maquettage fonctionnel et graphique</li>
                     <li>Développement front-end et back-end</li>
                     <li>Intégration web statique et dynamique</li>
+                    <li>Programmation orientée objet</li>
                     <li>Développement de bases de données</li>
                     <li>Design graphique et UI</li>
                     <li>Maîtrise de la chaîne de production print</li>
@@ -251,6 +252,22 @@ if (isset($_SESSION['alert'])) {
                 <div class="synopsis">
                     Site vitrine one-page avec intégration d'API Facebook, Soundcloud et une bannière
                     saisonnière.
+                </div>
+            </div>
+            <div class="projet relief">
+                <h3>Super Pixel Painting 3000</h3>
+                <div class="preview">
+                    <div class="image_container">
+                        <a href="https://jonathan.lesacteursduweb.fr/pixelpainting/pixel.html" target="_blank"><img src="css/images/superpixelpainting3000.webp" alt="Apperçu du jeu Super Pixel Painting 3000"></a>
+                    </div>
+                    <ul class="tags">
+                        <li class="tag">JS</li>
+                        <li class="tag">CSS</li>
+                        <li class="tag">HTML</li>
+                    </ul>
+                </div>
+                <div class="synopsis">
+                    Projet de mini-jeu en JavaScript réalisé dans le cadre de mon apprentissage de la manipulation du DOM.
                 </div>
             </div>
         </section>
