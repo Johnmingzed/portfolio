@@ -101,6 +101,7 @@ if (isset($_SESSION['alert'])) {
                     <li>Intégration web statique et dynamique</li>
                     <li>Programmation orientée objet</li>
                     <li>Développement de bases de données</li>
+                    <li>Développement d'API REST</li>
                     <li>Design graphique et UI</li>
                     <li>Maîtrise de la chaîne de production print</li>
                 </ul>
@@ -121,8 +122,10 @@ if (isset($_SESSION['alert'])) {
                     <li>CSS</li>
                     <li>SASS</li>
                     <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>Angular</li>
                     <li>React</li>
-                    <li>React Native</li>
+                    <li>PWA</li>
                     <li>Python</li>
                     <li>MySQL</li>
                     <li>Bash/Shell</li>
@@ -147,6 +150,8 @@ if (isset($_SESSION['alert'])) {
                     <li>Visual Studio</li>
                     <li>FileZilla</li>
                     <li>WordPress</li>
+                    <li>Trello</li>
+                    <li>XAMPP</li>
                     <li>GitHub</li>
                     <li>&nbsp;</li>
                     <li class="clr-light">QLC+</li>
