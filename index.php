@@ -266,13 +266,46 @@ if (isset($_SESSION['alert'])) {
                         <a href="https://jonathan.lesacteursduweb.fr/pixelpainting/pixel.html" target="_blank"><img src="css/images/superpixelpainting3000.webp" alt="Apperçu du jeu Super Pixel Painting 3000"></a>
                     </div>
                     <ul class="tags">
-                        <li class="tag">JS</li>
+                        <li class="tag">JavaScript</li>
                         <li class="tag">CSS</li>
                         <li class="tag">HTML</li>
                     </ul>
                 </div>
                 <div class="synopsis">
                     Projet de mini-jeu en JavaScript réalisé dans le cadre de mon apprentissage de la manipulation du DOM.
+                </div>
+            </div>
+            <div class="projet relief">
+                <h3>Super Citations 3000 - Backoffice</h3>
+                <div class="preview">
+                    <div class="image_container">
+                        <a href="https://jonathan.lesacteursduweb.fr/citations_backoffice/public" target="_blank"><img src="css/images/citations_backoffice.png" alt="Apperçu du backoffice de Super Citations 3000"></a>
+                    </div>
+                    <ul class="tags">
+                        <li class="tag">PHP</li>
+                        <li class="tag">Symfony</li>
+                        <li class="tag">Bootstrap</li>
+                        <li class="tag">MySQL</li>
+                    </ul>
+                </div>
+                <div class="synopsis">
+                    Projet de backoffice d'une application permettant la gestion des citations et exposition via une API.
+                </div>
+            </div>
+            <div class="projet relief">
+                <h3>Super Citations 3000 - Frontoffice</h3>
+                <div class="preview">
+                    <div class="image_container">
+                        <a href="https://jonathan.lesacteursduweb.fr/citations_frontoffice" target="_blank"><img src="css/images/citations_frontoffice.png" alt="Apperçu du frontoffice de Super Citations 3000"></a>
+                    </div>
+                    <ul class="tags">
+                        <li class="tag">TypeScript</li>
+                        <li class="tag">Angular</li>
+                        <li class="tag">API</li>
+                    </ul>
+                </div>
+                <div class="synopsis">
+                    Projet de frontoffice d'une application de citations consommant l'API fournie par le backoffice réalisé sous Angular.
                 </div>
             </div>
         </section>
