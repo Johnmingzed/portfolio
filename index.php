@@ -153,6 +153,7 @@ if (isset($_SESSION['alert'])) {
                     <li>Trello</li>
                     <li>XAMPP</li>
                     <li>GitHub</li>
+                    <li>Docker</li>
                     <li>&nbsp;</li>
                     <li class="clr-light">QLC+</li>
                     <li class="clr-light">Cubase</li>
