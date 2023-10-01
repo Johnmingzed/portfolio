@@ -280,7 +280,7 @@ if (isset($_SESSION['alert'])) {
                 <h3>Super Citations 3000 - Backoffice</h3>
                 <div class="preview">
                     <div class="image_container">
-                        <a href="https://jonathan.lesacteursduweb.fr/citations_backoffice/public" target="_blank"><img src="css/images/citations_backoffice.png" alt="Apperçu du backoffice de Super Citations 3000"></a>
+                        <a href="https://jonathan.lesacteursduweb.fr/citations_backoffice/public" target="_blank"><img src="css/images/citations_backoffice.webp" alt="Apperçu du backoffice de Super Citations 3000"></a>
                     </div>
                     <ul class="tags">
                         <li class="tag">PHP</li>
@@ -297,7 +297,7 @@ if (isset($_SESSION['alert'])) {
                 <h3>Super Citations 3000 - Frontoffice</h3>
                 <div class="preview">
                     <div class="image_container">
-                        <a href="https://jonathan.lesacteursduweb.fr/citations_frontoffice" target="_blank"><img src="css/images/citations_frontoffice.png" alt="Apperçu du frontoffice de Super Citations 3000"></a>
+                        <a href="https://jonathan.lesacteursduweb.fr/citations_frontoffice" target="_blank"><img src="css/images/citations_frontoffice.webp" alt="Apperçu du frontoffice de Super Citations 3000"></a>
                     </div>
                     <ul class="tags">
                         <li class="tag">TypeScript</li>
@@ -307,6 +307,60 @@ if (isset($_SESSION['alert'])) {
                 </div>
                 <div class="synopsis">
                     Projet de frontoffice d'une application de citations consommant l'API fournie par le backoffice réalisé sous Angular.
+                </div>
+            </div>
+            <div class="projet relief">
+                <h3>Super Resistor Calculatir 3000</h3>
+                <div class="preview">
+                    <div class="image_container">
+                        <a href="https://jonathan.lesacteursduweb.fr/files/resistance.exe" target="_blank"><img src="css/images/super_resistor.webp" alt="Apperçu de l'application Super Resistor Calculator 3000"></a>
+                    </div>
+                    <ul class="tags">
+                        <li class="tag">Python</li>
+                        <li class="tag">Tkinter</li>
+                        <li class="tag">PyInstaller</li>
+                        <li class="tag">.EXE</li>
+                    </ul>
+                </div>
+                <div class="synopsis">
+                    Mini-projet de prise en main du language Python/Tkinter réalisé à partir du tutoriel de Gérard SWINNER.
+                </div>
+            </div>
+            <div class="projet relief">
+                <h3>Super Pendu 3000</h3>
+                <div class="preview">
+                    <div class="image_container">
+                        <a href="https://jonathan.lesacteursduweb.fr/files/SuperPendu3000Setup.exe" target="_blank"><img src="css/images/super_pendu.webp" alt="Apperçu de l'application Super Pendu 3000"></a>
+                    </div>
+                    <ul class="tags">
+                        <li class="tag">Python</li>
+                        <li class="tag">Tkinter</li>
+                        <li class="tag">JSON</li>
+                        <li class="tag">XML</li>
+                        <li class="tag">SQLite</li>
+                        <li class="tag">.EXE</li>
+                    </ul>
+                </div>
+                <div class="synopsis">
+                    Projet de réalisation d'une application desktop Windows avec persistance des données et création d'un installeur.
+                </div>
+            </div>
+            <div class="projet relief">
+                <h3>Super Meteo 3000</h3>
+                <div class="preview">
+                    <div class="image_container">
+                        <a href="https://jonathan.lesacteursduweb.fr/files/supermeteo3000.apk" target="_blank"><img src="css/images/super_meteo.webp" alt="Apperçu de l'application Super Meteo 3000"></a>
+                    </div>
+                    <ul class="tags">
+                        <li class="tag">JavaScript</li>
+                        <li class="tag">Cordova</li>
+                        <li class="tag">GPS</li>
+                        <li class="tag">API</li>
+                        <li class="tag">.APK</li>
+                    </ul>
+                </div>
+                <div class="synopsis">
+                    Projet d'application météo pour Android. Réalisé en JavaScipt à l'aide de Cordova avec prise en charge du GPS.
                 </div>
             </div>
         </section>
