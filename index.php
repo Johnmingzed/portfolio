@@ -61,8 +61,7 @@ if (isset($_SESSION['alert'])) {
                 <table>
                     <tr>
                         <th>2023</th>
-                        <td>Concepteur Développeur d’Applications<br><span class="petit">(Titre Professionnel RNCP6 - en
-                                cours)</span></td>
+                        <td>Concepteur Développeur d’Applications<br><span class="petit">(Titre Professionnel RNCP6)</span></td>
                     </tr>
                     <tr>
                         <th>2017</th>
@@ -96,12 +95,14 @@ if (isset($_SESSION['alert'])) {
             <div class="card relief">
                 <h2>Compétences</h2>
                 <ul>
+                    <li>Étude et conception fonctionnelle</li>
                     <li>Maquettage fonctionnel et graphique</li>
                     <li>Développement front-end et back-end</li>
                     <li>Intégration web statique et dynamique</li>
                     <li>Programmation orientée objet</li>
+                    <li>Programmation asynchrone</li>
                     <li>Développement de bases de données</li>
-                    <li>Développement d'API REST</li>
+                    <li>Développement d'API REST et ActivityPub</li>
                     <li>Design graphique et UI</li>
                     <li>Maîtrise de la chaîne de production print</li>
                 </ul>
@@ -117,22 +118,22 @@ if (isset($_SESSION['alert'])) {
             <div class="tech right relief">
                 <h2>Technos</h2>
                 <ul>
-                    <li>PHP</li>
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>SASS</li>
+                    <li>Python</li>
+                    <li>PHP</li>
                     <li>JavaScript</li>
                     <li>TypeScript</li>
                     <li>Angular</li>
-                    <li>React</li>
-                    <li>PWA</li>
-                    <li>Python</li>
+                    <li>SQLite</li>
                     <li>MySQL</li>
-                    <li>Bash/Shell</li>
+                    <li>PWA</li>
                     <li>GIT</li>
+                    <li>Bash/Shell</li>
+                    <li>Apache</li>
+                    <li>Nginx</li>
                     <li>Bootstrap</li>
-                    <li>DMX</li>
-                    <li>C++</li>
                     <li>&nbsp;</li>
                     <li class="clr-light">Windows</li>
                     <li class="clr-light">Linux</li>
@@ -145,15 +146,14 @@ if (isset($_SESSION['alert'])) {
                     <li>Photoshop</li>
                     <li>InDesgin</li>
                     <li>Illustrator</li>
-                    <li>Figma</li>
+                    <li>Figma/PenPot</li>
                     <li>VS Code</li>
-                    <li>Visual Studio</li>
                     <li>FileZilla</li>
-                    <li>WordPress</li>
                     <li>Trello</li>
                     <li>XAMPP</li>
-                    <li>GitHub</li>
+                    <li>GitHub/GitLab</li>
                     <li>Docker</li>
+                    <li>WordPress</li>
                     <li>&nbsp;</li>
                     <li class="clr-light">QLC+</li>
                     <li class="clr-light">Cubase</li>
@@ -214,6 +214,27 @@ if (isset($_SESSION['alert'])) {
                     gestion.
                 </div>
             </div>
+            <div class="projet relief">
+                <h3>FatWork <span class="clr-light petit">Proof-Of-Concept</span></h3>
+                <div class="preview">
+                    <div class="image_container">
+                        <a href="https://gitlab.eirlab.net/jonathan.pchs/fatwork-poc" target="_blank">
+                            <img src="css/images/fatwork.webp" alt="Apperçu de l'application FatWork">
+                        </a>
+                    </div>
+                    <ul class="tags">
+                        <li class="tag">Python</li>
+                        <li class="tag">Quart</li>
+                        <li class="tag">Bovine</li>
+                        <li class="tag">Jinja</li>
+                        <li class="tag">SQLite</li>
+                        <li class="tag">ActivityPub</li>
+                    </ul>
+                </div>
+                <div class="synopsis">
+                    Preuve de concept d'une application de recrutement compatible avec le Fediverse via une API ActivityPub.
+                </div>
+            </div>
             <div class="projet relief static">
                 <h3>J&D Experience</h3>
                 <div class="preview">
@@ -228,20 +249,6 @@ if (isset($_SESSION['alert'])) {
                 </div>
                 <div class="synopsis">
                     Conception, réalisation et automatisation d'une régie de spectacle multimedia. </div>
-            </div>
-            <div class="projet relief static">
-                <h3>4k or Not <span class="clr-light petit">work in progress</span></h3>
-                <div class="preview">
-                    <div class="image_container wip">
-                        <img src="css/images/4k.webp" alt="Image 4K">
-                    </div>
-                    <ul class="tags">
-                        <li class="tag">C++</li>
-                    </ul>
-                </div>
-                <div class="synopsis">
-                    Application d'aide au choix de la résolution d'un écran en fonction de sa distance de visionnage.
-                </div>
             </div>
             <div class="projet relief">
                 <h3>Jonathan&David</h3>
