@@ -41,6 +41,9 @@ if (isset($_SESSION['alert'])) {
                 <h2 class="deco"><a href="#projects" class="clr-light">Projets</a></h2>
             </li>
             <li>
+                <h2 class="deco"><a href="files/cv_jonathan_painchammings.pdf" target="_blank" class="clr-light">CV</a></h2>
+            </li>
+            <li>
                 <h2 class="deco"><a href="#contact">Contact</a></h2>
             </li>
         </ul>
