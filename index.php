@@ -104,7 +104,7 @@ if (isset($_SESSION['alert'])) {
                     <li>Intégration web statique et dynamique</li>
                     <li>Programmation orientée objet</li>
                     <li>Programmation asynchrone</li>
-                    <li>Développement de bases de données</li>
+                    <li>Développement de bases de données relationnelles</li>
                     <li>Développement d'API REST et ActivityPub</li>
                     <li>Design graphique et UI</li>
                     <li>Maîtrise de la chaîne de production print</li>
